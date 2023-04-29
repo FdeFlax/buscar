@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>TuVecindarionline</title>
+  <link rel="stylesheet" href="css/buscar.css">
+  <link rel="stylesheet" href="css/fontello.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Golos+Text&display=swap" rel="stylesheet">
+  <script src="./js/barra.js"></script>
+</head>
+<body data-pag="index"onload="return A()">
+  <header>
+    <a href="index.html"><img src="./images/simple-house-symbol-and-home-icon-sign-free-png.png" alt=""></a>
+     <h1>TuVecindarionline</h1>
+     <h2>Las noticias de tu barrio actualizadas.</h2>
+  </header>
+
+  
+  <nav class="menufijo">
+    <ul id="menu"></ul>
+   <!-- <ul>
+      <li><a href="index.html" title="Inicio"><span class="icomenu1 icon-home"></span><span class="iconos">Inicio</span></a></li>
+      <li><a href="buscar.html" title="Buscar"><span class="icomenu1 icon-search"></span><span class="iconos">Buscar</span></a></li>
+      <li><a href="nueva.html" title="Nueva"><span class="icomenu1 icon-new"></span><span class="iconos">Nueva</span></a></li>
+      <li><a href="login.html" title="Iniciar sesi&oacute;n"><span class="icomenu1 icon-login"></span><span class="iconos">Iniciar sesi&oacute;n</span></a></li>
+      <li><a href="index.html" title="Cerrar sesi&oacute;n"><span class="icomenu1 icon-logout"></span><span class="iconos">Cerrar sesi&oacute;n</span></a></li>
+      <li><a href="registro.html" title="Registrarse"><span class="icomenu1 icon-register"></span><span class="iconos">Registrarse</span></a></li>
+  </ul>-->
+  </nav>
+
+  <nav class="menudespl">
+    <div>
+      <label for="showMenu" class="desplegable icon-menu" title="Men&uacute; desplegable"></label>
+      <input type="checkbox" id="showMenu">
+      <ul id="menu1"></ul>
+      <!-- <ul>
+         <li><a href="index.html" title="Inicio"><span class="icomenu1 icon-home"></span><span class="iconos">Inicio</span></a></li>
+         <li><a href="buscar.html" title="Buscar"><span class="icomenu1 icon-search"></span><span class="iconos">Buscar</span></a></li>
+         <li><a href="nueva.html" title="Nueva"><span class="icomenu1 icon-new"></span><span class="iconos">Nueva</span></a></li>
+         <li><a href="login.html" title="Iniciar sesi&oacute;n"><span class="icomenu1 icon-login"></span><span class="iconos">Iniciar sesi&oacute;n</span></a></li>
+         <li><a href="index.html" title="Cerrar sesi&oacute;n"><span class="icomenu1 icon-logout"></span><span class="iconos">Cerrar sesi&oacute;n</span></a></li>
+         <li><a href="registro.html" title="Registrarse"><span class="icomenu1 icon-register"></span><span class="iconos">Registrarse</span></a></li>
+     </ul>-->
+    </div>
+  </nav>
+          <main class="buscar">
+            <h2>Buscador de publicaciones</h2>
+            <form method="POST" id="busca">
+                <div >
+                    <table class="tablita">
+                        <tr>
+                            <td><span class="ico icon-align-justify"></span>Palabras</td>
+                            <td><input type="search" placeholder="Palabras que contiene"></td>
+                        </tr>
+                        <tr>
+                            <td><span ></span>Ubicación</td>
+                            <td><input id="Ubication" name="ubi" type="search" minlength="6" placeholder="palabras separadas por comas" maxlength="20" pattern="^[a-zA-Z0-9_.-]*$" placeholder="Zona a la que se refiere la publicación"></td>
+                        </tr>
+                        <tr>
+                            <td><span class="ico icon-clock"></span>Fecha de publicación(desde)</td>
+                            <td><div>
+                                Día<input id="dia1" class ="casilla" type="number"  min="1" max="31" step="1" value="1">&nbsp;&nbsp;
+                                Mes<input id="mes1" class ="casilla" type="number"  min="1" max="12" step="1" value="1">&nbsp;&nbsp;
+                                Año<input  id="anyo1" class="casilla" type="number"  min="2023" max="2030" step="1" value="2023">
+                            </div>
+                            </td>
+                            <tr><td><span class="ico icon-clock"></span>Fecha de publiación(hasta)</td>
+                                <td><div>
+                                    Día<input id="dia2" class ="casilla" type="number"  min="1" max="31" step="1" value="1">&nbsp;&nbsp;
+                                    Mes<input id="mes2" class="casilla" type="number"  min="1" max="12" step="1" value="1">&nbsp;&nbsp;
+                                    Año<input id="anyo2"class ="casilla" type="number"  min="2023" max="2030" step="1" value="2023">
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="botones">
+                    <button type="reset" class="limpiar" style="width:20%;float:left;">Limpiar</button>
+                    <button onclick=realizarBusqueda(event) type="submit" class="enviar" style="width:20%;float:right;">Buscar</button>
+                 </div>
+                </div>
+            </form>
+
+        </main>
+
+
+        <section class="seccion01">
+            <h2>Vecindario</h2>
+              
+          </div>
+        </section>
+          <div class="numpag">
+            <a href=""><span class="icopaso icon-vueltadoble"></span></a>
+            <a href=""><span class="icopaso icon-vuelta"></span></a>
+            <span> 1 de 10 </span>
+            <a href=""><span class="icopaso icon-paso"></span></a>
+            <a href=""><span class="icopaso icon-pasodoble"></span></a>
+        </div>
+    
+        <footer>
+            <p>&copy; <time datetime="2023-02">Febrero de 2023</time> <abbr title="Programación del Cliente Web">PCW</abbr></p><p><a href="acerca.html">Contacto</a></p> <p> Práctica 1 HTML - CSS</p>
+          </footer>
+		
+	</body>
+</html>
